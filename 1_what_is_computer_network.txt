@@ -1,0 +1,45 @@
+A Computer network is a system that connects numerous independent computers allowing them to share messages from one computer to another.
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=
+
+Different Layers of Computer Network
+
+    1.  Physical Layer -> (Physical layer)
+
+        1.  This layer adds start and end delimiters to the message. (These delimiters tell where the message starts and ends).
+        
+        2.  This layer also encodes the message based on the time interval and the voltage.
+
+    
+    2.  Routing Layer -> (DataLink layer, Network layer, Transport layer)
+
+        1.  The process of sending message source to destination using intermediaries is known as routing.
+
+        2.  This layer is useful when sender knows where to send this messages.
+
+        3.  While sending the message, the sender also includees the receiver's address in the message.
+
+        4.  Then this address is decode by router and send this message to destination.
+
+
+
+        To route message correctly to destination, sender gives destination ip and also broadcast their it's ip in some cases (if receiver wants to message back, they can do it easily).
+
+        MAC address -> This is like the identity of the computer system. It is permanent.
+        IP address -> This is a virtual/logical/temporary address.
+
+
+    3.  Behavioral Layer -> (Session layer)
+
+        1.  This layer defines the conversation settings between two or more computers.
+
+        2.  This layer answer question like :-
+
+            1.  How frequently can one computer send messages to another?
+
+            2.  Can the receiver after receiving a message, send a reply to the sender?
+
+            3.  Can the receiver send a message without receiving any message?
+
+
+        3.  So we are defining the frequency, directions and context of messages in this layer.    
