@@ -1,0 +1,30 @@
+                                            What is TCP and UDP
+                 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-
+
+
+
+Question ->  Regarding TCP and It's feature
+
+Answer -> (Guarranted delivery, ordering of message, reliable, Retries in case of failures)
+
+    1.  Both http and websockets use tcp. It stands for Transmission Control Protocol.
+
+    2.  It ensures guarranted delivery. Whenever the receiver gets our message, We get an acknowledgment.
+
+    3.  Guarranted delivery make sures our message got delivered.
+
+    4.  It also ensures ordering of message. Since we waited our acknowledgment before sending the next message.
+
+    5.  In TCP connection, It also retries in case of failures.
+
+
+Question -> Regarding UDP and It's feature
+
+Answer -> Unlike TCP it doesn't have above three feature i:e (guarranted delivery, ordering and retries).
+
+    1.  It stands for User Datagram Protocol.
+
+    2.  It's mainly used for real time delivery.
+
+
+
