@@ -1,0 +1,34 @@
+
+                                    How communication between router and server happens or goes ?
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-
+
+
+Both Http and websockets uses TCP protocol as core protocol.
+
+Regarding Http and It's feature :->
+
+    1.  This is the most common way to request and receive response. It stands for Hyper Text Transmission Protocol.
+
+    2.  Http protocol is stateless. It means every request is independent and doesn't have any relation or related to old requests to server.
+
+    3.  It's typical client and server protocol. Where every client request will have request ID and server needs to respond.
+
+    4.  In http protocol, Server can't request to client. It's unidirectional communication.
+
+
+
+
+Regarding WebSockets and It's feature :->   
+
+    1.  Since http was unidirectional, If we wants to have bidirectional communication, We can use WebSockets.
+
+    2.  It allows for peer-to-peer communication, So it establishes a duplex connection.
+
+    3.  In peer-to-peer communication, Both devices can send and receive requests.
+
+    4.  We can also use xmpp (Extensible Messaging and Presence Protocol), Which is open xml technology for real-time communication.
+    
+
+
+
