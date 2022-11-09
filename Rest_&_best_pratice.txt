@@ -1,0 +1,57 @@
+Question ->  What is REST ? (representational state transfers) (statless, cacheable, built over http)
+
+Answer ->
+
+  1.    REST is a design style for protocols, it was developed by Roy Fielding.
+
+  2.    REST is a set of architectural constraints, not a protocol or a standard.
+
+  3.    API developers can implement REST in a variety of ways.
+
+  4.    When a client request is made via a RESTful API, it transfers a representation of the state of the resource to the endpoint.
+
+  5.    This is representation or information is delivered in one of the format like (JSON, XML, HTML etc).
+
+
+
+Few Important more points :-
+
+    1.  It is used over http.
+    
+    2.  Since it's used over http, It's stateless, Every request to server should have all required info to understand and server it.
+
+    3.  Since it's stateless, We can't reply on previous requests.
+
+    4.  But We can cache request.
+
+
+
+
+
+
+Best practices for REST API Design :-
+
+    1.  Accept and Respond in JSON
+
+    2.  Use nouns instead of verbs in endpoint paths.
+
+    3.  Use logical nesting on endpoints
+
+    4.  Handle errors gracefully and return standard status codes and messages
+
+    5.  Allow filtering, sorting and pagination
+
+    6.  Maintain good security practices, Use ssl and configure CORS
+
+    7.  Cache data to improve performance
+
+    8.  Versioning of APIs
+
+    9.  patch instead of put
+
+    10. Provide API documentation
+
+    11. Use standard UTC dates
+
+    12. Accept API key authentication
+
