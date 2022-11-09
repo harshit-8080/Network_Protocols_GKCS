@@ -1,0 +1,37 @@
+How Internet Works?
+
+
+Question -> What happens when we enter a URL let's say -> www.facebook.com
+
+Answer ->
+    1.  First of all, Computer sends this info to NIC (network interface card -> a hardware deive in computer).
+
+    2.  This is NIC allows the computer to connet to router.
+
+    3.   This Router doesn't know about the bussiness domanin that's why i asks Central authority or DNS or Internet Backbone.
+
+    4.  This DNS has the mapping of bussiness domanin name to an ip address.
+
+    5.  After the router gets the ip address from DNS, It's connects to facebook server. BUT HOW ??
+
+    6.  client Router goes to the server from router to router, At every router we get address of next router, And finall it reach to facebook server.
+
+    7.  Now facebook server needs to send the response back to client router with similar process.
+
+
+
+
+
+Question -> Now router has the response, But There can be multiple device connected to that router ?
+            So how router knows which device it need to send response.
+
+ Answer ->
+    1.  The Router sends the sender address when sending the request to server.
+    
+    2.  We use NAT (Network Address Translation).
+
+    3.  Every device has a unique ip address inside the network which is given by router. (DHCP)
+    
+    4.  Dynamic Host Configuration Protocol (DHCP) is a network management protocol used to automate the process of configuring devices on IP networks.
+
+    5.  So router knows which ip has ask this info or who requested this info.
