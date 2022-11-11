@@ -1,4 +1,4 @@
-Question ->  What is REST ? (representational state transfers) (statless, cacheable, built over http)
+Question ->  What is REST ? Communication Standards -> (representational state transfers) (statless, cacheable, built over http)
 
 Answer ->
 
@@ -16,7 +16,7 @@ Answer ->
 
 Few Important more points :-
 
-    1.  It is used over http.
+    1.  It is used or written over http.
     
     2.  Since it's used over http, It's stateless, Every request to server should have all required info to understand and server it.
 
