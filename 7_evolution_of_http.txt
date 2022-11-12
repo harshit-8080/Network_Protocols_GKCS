@@ -1,0 +1,54 @@
+                            Evolution of HTTP ->        HTTP 1.0 -> HTTP 1.1 -> HTTP 2.0 -> HTTP 3.0
+
+-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=---=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+
+
+
+HTTP 1.0
+Every request to server need new TCP connection.
+
+Problem: Each request to the same server needed a new TCP connection.
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+HTTP 1.1
+Feature:->
+1.  Allowing a web browser to send multiple requests over a single persistent TCP connection.
+2.  It solves the HTTP 1.0 problem.
+
+
+
+Problem:->
+1.  HOL blocking issue. HOL(head-of-line) blocking issue - new request had to wait for the earlier request to complete.
+2.  HOL blocking issue at two layers: 
+    1. Application -> Not able to process request and block queue.
+    2. Transport(TCP) -> acknowledgment issue
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+HTTP 2.0
+Feature:->(HOL at Application layer solved)
+1.  It solves the HTTP 1.1 problem of the HOL issue at the application layer using request multiplexing.
+2.  It implements multiplexing by breaking the messages/data packets into frames and are sent in streams.
+3.  Each stream has a stream ID. 
+4.  So, when you get a message of a stream ID, that stream is going to be blocked until all the messages having the stream IDs are processed.
+5.  Message of other stream will not be blocked. (They will be only blocked in case data or packet drop)
+
+
+
+Problem:-> (HOL at Transport layer still exist)
+1.  HOL blocking issue at TCP. (If there was a drop-in packet in one of the streams, other streams will still be blocked.)
+2.  If you have two streams with stream IDs 1 and 2. Even if one packet in stream 2 was dropped, stream 1 is also blocked.
+3.  stream 1 will be blocked, because http 2.0 is also written over tcp connection and tcp always insures acknowledgment.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+HTTP 3.0 (QUIC -> Quick UDP Internet Connections)
+Feature:->
+1.  HTTP 3.0 uses UDP instead of TCP.
+2.  It used UPD because as there are no acknowledgments needed.
+3.  It provides streams, ordered delivery and all other features of HTTP 2.0. 
