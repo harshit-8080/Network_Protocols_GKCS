@@ -1,0 +1,45 @@
+
+
+Two popular Network Stack
+
+        1.  OSI
+        2.  TCP
+
+
+OSI 
+    1. Application.
+    2. Presentation.
+    3. Session.
+    4. Transport
+    5. Network.
+    6. DataLink.
+    7. Physical.
+
+
+TCP 
+    1. Application. (Presentation, Session)
+    2. Transport.
+    3. Network.
+    4. DataLink.
+    5. Physical.    
+
+
+Application Layer :->
+        
+        1.  It exists on end systems only.
+        2.  writting/providing data off to Network.
+        3.  Feature exists on end systems are :-
+            1.  instant messageing -> xmtp
+            2.  voip.
+            3.  email -> smtp
+
+        
+        4.  Architecture which exists on Application Layer
+                1. client - server architecture.
+                    client -> end users
+                    server -> process which runs on some hardware or some software. Which can Accept request from client and server the response.
+
+                2.  peer to peer architecture -> (EX -> torent)
+
+        5.          
+                           
