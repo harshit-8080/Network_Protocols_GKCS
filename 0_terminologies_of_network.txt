@@ -1,0 +1,60 @@
+
+1.  Network Protocols -> Rules or Regulations of setup for Communication and share information over a Network.
+
+
+
+2.  Packets ->  
+                In order to send data over computer Network, We can't send all or big chunk data at once.
+                We need to divide the data in smaller chunks, These small chunks are called Packets.
+
+
+3.  Address ->  Sending data over a Network requires a unique destination Address on Network. That's called Address in CN.
+
+
+
+4.  Port ->     
+                Port helps you in getting packets to a specific process on the host.
+                To deliver a packets to correct process in computer, We need port.
+
+                IP + PORT = SOCKET
+
+                Range of port -> 0 - 2^16 = 65535 ports are available.
+
+                0 - 1023 -> Well known Ports (80 is for http and 443 is for https)
+
+                1024 - 49152 -> Register Ports (Any third party can use these range) (postgres - 5432, mongo - 27017)
+
+                49152 - 65535 -> Dynamic Port (We can use it as well) least uses
+
+
+5.  Access Network ->
+                    
+                    These are media using which end systems uses to connect to the internet.
+
+
+                    1.  NIC -> Network Interface Adapters 
+
+                            It enables or help computer to connect with Network.
+
+
+                    2.  DSL -> Digital Subscriber Line
+
+                            A DSL service is an actual connection to the Internet. 
+                            DSL brings a connection into your home through telephone lines.
+                            Generally Provided by ISPs
+                    
+                    3.  ISP -> Company which provides internet to users.       
+
+                    4.  We can use internet using fibre cable, statelite, optical lines.   
+
+
+
+
+
+
+
+
+
+
+
+
