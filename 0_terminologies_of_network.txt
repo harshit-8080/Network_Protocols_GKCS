@@ -27,6 +27,31 @@
                 49152 - 65535 -> Dynamic Port (We can use it as well) least uses
 
 
+5.  Access Network ->
+                    
+                    These are media using which end systems uses to connect to the internet.
+
+
+                    1.  NIC -> Network Interface Adapters 
+
+                            It enables or help computer to connect with Network.
+
+
+                    2.  DSL -> Digital Subscriber Line
+
+                            A DSL service is an actual connection to the Internet. 
+                            DSL brings a connection into your home through telephone lines.
+                            Generally Provided by ISPs
+                    
+                    3.  ISP -> Company which provides internet to users.       
+
+                    4.  We can use internet using fibre cable, statelite, optical lines.   
+
+
+
+
+
+
 
 
 
