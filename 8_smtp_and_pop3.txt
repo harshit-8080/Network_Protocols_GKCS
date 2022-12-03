@@ -1,4 +1,4 @@
-1.  SMTP (Simple mail protocol) is used to send mail that are stored in user's inbox.
+1.  SMTP (Simple mail transfer protocol) is used to send mail that are stored in user's inbox.
 
 2.  POP3 is used to retreive mail, That are stored on user's sent box.
 
@@ -8,7 +8,7 @@
 
 
 
-SMTP
+SMTP - Simple Mail Transfer Protocol
 
     1.  When a user sends a mail, It's send to sender's SMTP server.
     
@@ -24,10 +24,36 @@ SMTP
 
 
 
+POP3 - Post Office Protocol -
+
+1.  Users love this protocol for its low dependency on Internet connections. Useful even in  Internet connection is unstable or even unavailable
+
+2.  POP3 downloads emails from the server to the client so you can read them even offline. 
+
+3.  The server deletes messages once they are retrieved. (insures privacy) This is the default and common setting.
+
+
+Phases :->
+
+    1.  The client connects to the server (AUTHORIZATION State).
+
+    2.  The client retrieves email (TRANSACTION State).
+
+    3.  The server deletes the stored messages (UPDATE State).
+
+    4.  The client disconnects from the server.
 
 
 
+IMAP4 (Internet Message Access Protocol)
 
+1.  Internet Message Access Protocol (IMAP) is a communication standard to access email stored on the server.
+
+2.  The key feature of this protocol is that the message remains on the server.
+
+3.  It will be downloaded as soon as the recipient picks it to open.
+
+4.  So, IMAP gets access to the email from any device or location if authorized.
 
 
 
