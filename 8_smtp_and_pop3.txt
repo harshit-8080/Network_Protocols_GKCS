@@ -1,0 +1,5 @@
+1.  SMPT (Simple mail protocol) is used to send mail that are stored in user's inbox.
+
+2.  POP3 is used to retreive mail, That are stored on user's sent box.
+
+These box (SMPT and POP3 work together)
