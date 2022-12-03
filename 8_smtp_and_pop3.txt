@@ -1,5 +1,33 @@
-1.  SMPT (Simple mail protocol) is used to send mail that are stored in user's inbox.
+1.  SMTP (Simple mail protocol) is used to send mail that are stored in user's inbox.
 
 2.  POP3 is used to retreive mail, That are stored on user's sent box.
 
-These box (SMPT and POP3 work together)
+3.  These box (SMTP and POP3 work together) and uses TCP as lower protocol.
+
+4.  SMTP is push protocol and POP3 is pop protocol.
+
+
+
+SMTP
+
+    1.  When a user sends a mail, It's send to sender's SMTP server.
+    
+    2.  User SMPT server places this emails to message queue.
+    
+    3.  Now Sender's SMTP server starts iniating connection with receiver's SMTP server and conducts a handshake (in case when sender and receiver's SMTP servers are different).
+    
+    4.  Now finally it sends the email to receiver's SMTP server.
+
+    5.  As a last Step, Email will be downloaded from receiver's SMTP server and client shows the email.
+
+    6.  Sender's SMTP also retry in case of failure while sending mail.
+
+
+
+
+
+
+
+
+
+
