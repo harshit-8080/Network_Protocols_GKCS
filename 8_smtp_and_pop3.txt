@@ -57,3 +57,8 @@ IMAP4 (Internet Message Access Protocol)
 
 
 
+POP3 and IMAP both are pull protocol.
+
+and
+
+SMTP is push protocol.
