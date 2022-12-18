@@ -1,0 +1,10 @@
+Note: Back-end services use RPC as a communication mechanism of choice due to its high performance and simple abstraction of calling remote code as local functions.
+
+
+1.  Remote procedure calls (RPCs) provide an abstraction of a local procedure call to the developers by hiding the complexities of packing and sending function arguments to the remote server.
+2.  Receiving the return values, and managing any network retries.
+
+
+
+The client, the client stub, and one instance of RPC runtime are running on the client machine. 
+The server, the server stub, and one instance of RPC runtime are running on the server machine.
